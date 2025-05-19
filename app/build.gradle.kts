@@ -32,12 +32,14 @@ android {
 }
 
 dependencies {
-
+// Retrofit for API calls
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
-    implementation ("androidx.recyclerview:recyclerview:1.3.1")
+
+// Glide for image loading
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
